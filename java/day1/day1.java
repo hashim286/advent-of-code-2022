@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Main {
+public class Day1 {
     public static void main(String[] args) {
         String path = "text.txt";
         // want to go through text.txt, find new line, add all  nums above, then add to list, return highest
