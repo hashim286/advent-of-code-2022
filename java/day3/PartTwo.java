@@ -22,7 +22,6 @@ public class PartTwo {
                     }
                 }
             }
-            System.out.println(lettersInAll);
             for (char letter: lettersInAll) {
                 int ascii = (int) letter;
                 if (ascii >= 97 && ascii <= 122) {
