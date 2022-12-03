@@ -21,7 +21,6 @@ public class PartTwo {
                         break;
                     }
                 }
-
             }
             System.out.println(lettersInAll);
             for (char letter: lettersInAll) {
