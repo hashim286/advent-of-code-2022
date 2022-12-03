@@ -11,6 +11,8 @@ points_for_loss = 0
 player_score = 0
 
 
+FILE_PATH = "text.txt"
+
 def translate_move_to_number(move):
     if move == "A":
         return points_for_rock
@@ -51,7 +53,7 @@ def determine_winner(move_one, move_two):
         return points_for_loss
 
 
-with open("text.txt") as file:
+with open(FILE_PATH) as file:
     for line in file:
         text = line.split(" ")
         text[1] = text[1].strip()
@@ -60,4 +62,5 @@ with open("text.txt") as file:
         your_move = determine_complement_move(opponent_move, text[1])
         player_score += determine_winner(opponent_move, your_move) + your_move
     print(player_score)
+
 
