@@ -10,6 +10,8 @@ points_for_loss = 0
 
 player_score = 0
 
+FILE_PATH = "text.txt"
+
 
 def translate_move_to_number(move):
     if move == "A" or move == "X":
@@ -30,7 +32,7 @@ def determine_winner(move_one, move_two):
         return points_for_loss
 
 
-with open("text.txt") as file:
+with open(FILE_PATH) as file:
     for line in file:
         moves = line.split(" ")
         moves[1] = moves[1].strip()
