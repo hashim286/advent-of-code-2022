@@ -31,8 +31,6 @@ with open(FILE_PATH) as file:
         tasks = line.split(",")
         first_range = tasks[0].split("-")
         second_range = tasks[1].split("-")
-        # if lower bound on first range is greater than second AND upper bound is less than second, then first is
-        # contained within second, otherwise, check reverse condition, else, no contained, so skip
         convert_to_ints(first_range)
         convert_to_ints(second_range)
         total_of_overlapping_tasks += find_overlaps(first_range, second_range)
