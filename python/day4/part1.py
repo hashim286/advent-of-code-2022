@@ -20,7 +20,6 @@ def compare_ranges(range_one, range_two):
 with open(FILE_PATH) as file:
     for line in file:
         tasks = line.split(",")
-        # tasks[1] = tasks[1].strip()
         first_range = tasks[0].split("-")
         second_range = tasks[1].split("-")
         # if lower bound on first range is greater than second AND upper bound is less than second, then first is
