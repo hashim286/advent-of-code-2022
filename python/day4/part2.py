@@ -1,4 +1,4 @@
-FILE_PATH = "E:/PycharmProjects/advent-of-code/day4/text.txt"
+FILE_PATH = "text.txt"
 
 total_of_overlapping_tasks = 0
 
