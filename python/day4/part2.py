@@ -1,4 +1,4 @@
-FILE_PATH = "text.txt"
+FILE_PATH = "E:/PycharmProjects/advent-of-code/day4/text.txt"
 
 total_of_overlapping_tasks = 0
 
@@ -10,18 +10,9 @@ def convert_to_ints(input_range):
 
 def find_overlaps(range_one, range_two):
     value_to_return = 0
-    if range_one[0] <= range_two[0] and range_one[1] >= range_two[1]:
+
+    if range_one[0] <= range_two[0] <= range_one[1] or range_two[0] <= range_one[0] <= range_two[1]:
         value_to_return = 1
-    elif range_two[0] <= range_one[0] and range_two[1] >= range_one[1]:
-        value_to_return = 1
-    elif range_one[0] < range_two[0] < range_one[1] or range_two[0] < range_one[0] < range_two[1]:
-        # checks if lower bound of ranges are contained within the other range
-        value_to_return = 1
-    else:
-        # check if any bounds equal each other
-        for bound in range_one:
-            if bound == range_two[0] or bound == range_two[1]:
-                value_to_return = 1
 
     return value_to_return
 
