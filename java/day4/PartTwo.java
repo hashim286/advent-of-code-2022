@@ -15,9 +15,6 @@ public class PartTwo {
                 String[] boundsTwo = lineOneSplit[1].split("-");
 
                 overlaps += findOverlap(boundsOne, boundsTwo);
-
-
-
             }
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
